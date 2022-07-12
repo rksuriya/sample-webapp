@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+#header
+{
+background-color : yellow;
+color: green;
+text-align : center
+
+
+}
+
+#main
+{
+background-color : powderblue;
+text-align : center-left
+}
+
+
+</style>
+
+<body>
+
+<script>
+alert("Welcome everyone");
+
+function function1()
+{
+if(document.form1.fname.value =="")
+{
+alert("Please fill first name");
+}
+else if(document.form1.lname.value =="")
+{
+alert("Please fill last name");
+}
+else if(document.form1.age.value =="")
+{
+alert("Please fill age");
+}
+
+else if((document.form1.age.value <15)||(document.form1.age.value >35))
+{
+alert("Please fill age between 15-30");
+}
+
+else if(document.form1.date.value =="")
+{
+alert("Please fill date");
+}
+else if(document.form1.gender.value =="")
+{
+alert("Please fill gender");
+}
+else if(document.form1.favsbj.value =="")
+{
+alert("Please fill favorite subject");
+}
+
+else if(document.form1.address.value =="")
+{
+alert("Please fill address");
+}
+
+else
+{
+alert("Sucessfull");
+}
+}
+
+</script>
+
+
+
+
+<h1 id ="header" >Sample Form</h1>
+<div id = "main">
+<form action = "#" name = "form1">
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" placeholder="Enter your first name"  ><br>
+<label for="last name">Last name:</label><br>
+<input type="text" id="last name" name="lname"placeholder="Enter your last name" ><br>
+<label for="age">Age(15 to 35):</label><br>
+<input type="number" id="age" name="age" placeholder="Enter your age" ><br><br>
+<label for="date">DOB:</label><br>
+<input type="date" id="date" name="date" ><br><br>
+<label for="gender">Gender:</label><br>
+<input type="radio" id="gender" name="gender" >
+<label for="gender">Male</label><br>
+<input type="radio" id="gender" name="gender" >
+<label for="gender">Female</label><br><br>
+<label for="favourite subject">Favourite subjects</label><br>
+
+
+<input type="checkbox" id="English" name="favsbj" >
+<label for="English">English</label><br>
+
+
+<input type="checkbox" id="Maths" name="favsbj" >
+<label for="Maths">Maths</label><br>
+
+<input type="checkbox" id="Science" name="favsbj" >
+<label for="Science">Science</label><br>
+<input type="checkbox" id="Social Science" name="favsbj" >
+<label for="Social science">Social science</label><br>
+<input type="checkbox" id="P.T" name="favsbj" >
+<label for="P.T">P.T</label><br><br>
+
+<label for=""YOF>Year of Passing</label><br>
+<Select id= "YOF" name="YOF" >
+<option>2016</option>
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
+</Select><br>
+
+<label for="">Address</label><br>
+<textarea placeholder = "Enter your address" name = "address"></textarea><br>
+
+<button type = "button" onclick = "function1()">Submit</button>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
